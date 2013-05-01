@@ -1,7 +1,9 @@
 def xToTheX(x):
-    result = 1
-    for n in range(x):
-        result = x*result
+    result = x
+    while x > 1:
+        result = result*result
+        x = x - int(x/2)
+    result = result**x
     return result
 
 total = 0
